@@ -45,37 +45,65 @@ nav {
   transition: 1s;
 }
 nav:hover {
-  right: 100px;
+  right: 50px;
 }
-nav > ul {
+
+#menu {
+  position: relative;
+  z-index: 3;
+  width: 70vw;
+  height: 100vh;
+  background-color: #b6c6d6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+  opacity: 0.8;
+  transition: 0.1s;
+  right: 200px;
+}
+#menu:hover {
+  right: 0px;
+}
+#menu > div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 50vw;
-  height: 100vh;
-  background-color: #b6c6d6;
-  position: relative;
-  z-index: 3;
-  opacity: 0;
-  color: #4d5b69;
-  transition: 1s;
-  border-radius: 50px;
 }
-nav > ul:hover {
-  right: -100px;
-  opacity: 0.9;
+#menu > div > div {
+  width: 80%;
+  height: 30%;
 }
-nav > ul > ul {
-  width: 90%;
-  flex-grow: 1;
+#menu > div > ul {
   list-style-type: none;
+  width: 80%;
+  height: 70%;
 }
-nav > ul > ul > li {
-  cursor: pointer;
+#menu > div:nth-child(1) {
+  width: 50%;
+  height: 5%;
 }
-nav > ul > ul > li:hover {
-  color: white;
+#menu > div:nth-child(2) {
+  width: 50%;
+  height: 10%;
+}
+#menu > div:nth-child(3) {
+  width: 50%;
+  height: 20%;
+}
+#menu > div:nth-child(4) {
+  width: 50%;
+  height: 10%;
+}
+#menu > div:nth-child(5) {
+  width: 50%;
+  height: 20%;
+}
+#menu > div:nth-child(6) {
+  width: 50%;
+  height: 5%;
 }
 
 main {
@@ -137,4 +165,4 @@ main > section:nth-child(2) > div:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}/*# sourceMappingURL=mobile_ver.css.map */
+}/*# sourceMappingURL=style.css.map */
