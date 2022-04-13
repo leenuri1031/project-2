@@ -76,23 +76,83 @@ $color-6:#202a33;
 #root{
   @include root-style;
   @include flex-setting(space-around, flex-start );
-  overflow: hidden
+  overflow: hidden;
 }
 
 nav{
     @include box-style(70%, 15%, $color-2);
     border-radius: 50px;
+    @include position-setting(2);
+    right: 160px;
+    transition: 1s;
+
+    &:hover{
+      right: 50px;
+    }
   }
   
+  #menu{
+    @include position-setting(3);
+    @include box-style(70vw, 100vh, $color-2);
+    @include flex-setting(space-around,center );
+    flex-direction: column;
+    border-radius: 50px;
+    opacity: 0.8;
+    transition: 1s;
 
-#menu{
-  display: none
-}
+    right: 200px;
+    // display: none;
+
+    &:hover{
+      right: 0px;
+    }
+
+    &>div{
+      @include menue-setting;
+
+      &>div{
+        @include size(80%, 30%);
+      }
+
+      &>ul{
+        list-style-type: none;
+        @include size(80%, 70%);
+      }
+    }
+    
+    &>div:nth-child(1){
+      @include size(50%, 5%);
+    }
+
+    &>div:nth-child(2){
+      @include size(50%, 10%);
+    }
+
+    &>div:nth-child(3){
+      @include size(50%, 20%);
+    }
+
+    &>div:nth-child(4){
+      @include size(50%, 10%);
+    }
+
+    &>div:nth-child(5){
+      @include size(50%, 20%);
+    }
+
+    &>div:nth-child(6){
+      @include size(50%, 5%);
+    }
+
+  }
+
+
 
 
 main{
   @include size(inherit, 60%);
   @include menue-setting;
+
 
   &>section{
     @include size(80%, 45%);
