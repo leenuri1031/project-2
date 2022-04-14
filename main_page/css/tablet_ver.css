@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}/*# sourceMappingURL=tablet_ver.css.map */

@@ -1,0 +1,75 @@
+$width-root:100vw;
+$height-root:100vh;
+$color-black:black;
+$color-white:white;
+$solid-black:1px solid black;
+$solid-gray:1px solid #888;
+$solid-red:1px solid #613c3c;
+$width-per:45%;
+$height-per:90%;
+$color-1:#dedfe0;
+$color-2:#b6c6d6;
+$color-3:#5f87ac;
+$color-4:#6f7a85;
+$color-5:#4d5b69;
+$color-6:#202a33;
+
+
+// ------------------------------------------------------------------
+
+
+.flex{display: flex;}
+
+.position-absolute{position: absolute;}
+
+.position-relative{position: relative;}
+
+.flex-column{flex-direction: column;}
+
+.flex-row{flex-direction: row;}
+
+
+@mixin flex-setting($jus, $ali) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+}
+
+
+@mixin root-style {
+  width: $width-root;
+  height: $height-root;
+  display: flex;
+  flex-direction: column;
+}  
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin box-style($w, $h, $col) {
+  width: $w;
+  height: $h;
+  background-color: $col;
+}
+
+@mixin position-setting ($z-in,){
+  position: relative;
+  z-index: $z-in;
+}
+
+@mixin menue-setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+// ------------------------------------------------------------------
+
+
+@media(min-width:450px){
+  
+}
