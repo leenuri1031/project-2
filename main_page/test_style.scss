@@ -91,28 +91,48 @@ $color-6:#202a33;
   }
 }
 
-
 // ------------------------------------------------------------------
 
 
-@media(min-width:450px){
+@media(min-width:1020px){
 
+  nav{
+    @include box-style(100vw, 15vh, $color-2);
+    @include flex-setting(space-around, center );
+    @include position-setting(3);
 
+    &>div{
+      @include box-style(100vw, 30vh, $color-2);
+      @include flex-setting(space-around, center );
 
-  main{
-  
-    &>section:nth-child(1){
-  
-      &>div:first-child{
-      @include box-style(350px, 350px, $color-2);
-      border-radius: 50%;
-      }
-  
-      &>div:last-child{
-        font-size: 30px;
-        bottom: 100px;
-        color: $color-5;
+      &>ul{
+        @include box-style(50%, inherit, $color-2);
+        border: $solid-black;
+        @include position-setting(3);
+
+        &:hover{
+          top: 20vh;
+        }
       }
     }
+
+
   }
+
+  #root{
+    @include root-style;
+    @include flex-setting(space-around, flex-end );
+    overflow: hidden;
+  }
+
+  main{
+    @include size(100%, 80%);
+    @include flex-setting(center, center );
+
+    &>section{
+    @include box-style(35vw, 35vw, $color-4);
+    border-radius: 50%;
+    }
+  }
+
 }

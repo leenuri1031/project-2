@@ -1,5 +1,5 @@
-$width-root:100vw;
-$height-root:100vh;
+$width-root:90vw;
+$height-root:90vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
@@ -41,8 +41,8 @@ $color-6:#202a33;
 
 
 @mixin root-style {
-  width: $width-root;
-  height: $height-root;
+  width: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }  
@@ -70,49 +70,78 @@ $color-6:#202a33;
   align-items: center;
 }
 
+@mixin animation($name){
+  animation-duration: 3s;
+  animation-name: $name;
+  animation-timing-function: linear;
+}
+
+@mixin keyframe($ani_name) {
+  @keyframes #{$ani_name} {
+    @content;
+  }
+}
+
+@include keyframe(move){
+  0%{
+    left: -100vw; 
+  }
+  50%{
+    left: 0%; 
+  }
+
+  100%{
+    left: 0%; 
+  }
+}
+
+
+
+
 
 // ------------------------------------------------------------------
 
-#root{
-  @include root-style;
-  @include flex-setting(space-around, flex-start );
-  overflow: hidden;
+body{
+  width: 100vw;
+  height: 100vh;
 }
 
 nav{
-    @include box-style(70%, 15%, $color-2);
-    border-radius: 50px;
-    @include position-setting(2);
-    right: 160px;
-    transition: 1s;
+  @include box-style(50vw, 10vh, $color-2);
+  @include position-setting(2);
+  top: 5vh;
+  transition: 1s;
+  border-radius: 50px;
 
-
-    &:hover{
-      right: 100px;
-    }
+  &:hover{
+    right: 25vw;
+  }
     
 
     &>ul{
     @include menue-setting;
-    @include box-style(50vw, 100vh, $color-2);
+    // @include box-style(50vw, 100vh, $color-2);
     @include position-setting(3);
+    right: -20vw;
     opacity: 0;
     color: $color-5;
-    transition: 1s;
-    border-radius: 50px;
+    transition: 0.5s;
 
     // 원하는 효과를 만들 수 없어서 최대한 비슷한 효과느낌이 나도록 opac으로 안보이는 것처럼 만듬
 
 
     &:hover{
-      right: -100px;
+      right: -20vw;
       opacity: 0.9;
     }
 
     &>ul{
-      width: 90%;
-      flex-grow: 1;
+      width: 70%; 
       list-style-type: none;
+      @include flex-setting(center, flex-start );
+      flex-direction: column;
+      @include position-setting(3);
+      left: 5vw;
 
       &>li{
         cursor: pointer;
@@ -122,17 +151,44 @@ nav{
         }
       }
     }
+
+    &>ul:nth-child(1){
+      height: 3%;  
+    }
+
+    &>ul:nth-child(2){
+      height: 8%;  
+    }
+
+    &>ul:nth-child(3){
+      height: 20%; 
+    }
+
+    &>ul:nth-child(4){
+      height: 10%; 
+    }
+
+    &>ul:nth-child(5){
+      height: 20%; 
+    }
+
+    &>ul:nth-child(6){
+      height: 3%;  
+    }
   }
 }
 
-  
+#root{
+  @include root-style;
+  @include flex-setting(space-around, flex-start );
+  overflow: hidden;
+}
 
 
 
 main{
-  @include size(inherit, 60%);
+  @include size(inherit, 80%);
   @include menue-setting;
-
 
 
   &>section{
@@ -146,12 +202,13 @@ main{
     &>div:first-child{
     @include box-style(45vw, 45vw, $color-2);
     border-radius: 50%;
+    @include position-setting(1);
     }
 
     &>div:last-child{
       @include size(80%, 20%);
       @include flex-setting(flex-start, center );
-      position: relative;
+      @include position-setting(2);
       bottom: 100px;
       color: $color-5;
     }
@@ -159,23 +216,30 @@ main{
 
   &>section:nth-child(2){
     @include flex-setting(space-around, center);
+    flex-direction: column;
 
     &>div{
-      @include size(30%, 80%);
+      @include size(80%, 30%);
       color: $color-5;
+      position: relative;
+
+      &>h3{
+      @include size(35%, 80%);
+      }
     }
     
     &>div:nth-child(1){
-      @include flex-setting(center, flex-start);
+      @include flex-setting(flex-start, center);
+      @include animation(move);
     }
+
+    // div:nth-child(1)이 먼저 스라이드 되고 dv:nth-child(2)를 뒤에 나오게 하고 싶은데 delay를 주면 원래 있던자리에서 있다가 슬라이드 되는 현상이 나타남
+    // 어떻게 해결 할 수 있는지?
 
     &>div:nth-child(2){
-      @include flex-setting(space-between, center);
-      flex-direction: column;
-    }
-
-    &>div:nth-child(3){
-      @include flex-setting(center, flex-end);
+      @include flex-setting(flex-end, center);
+      @include animation(move);
+      // animation-delay: 1s;
     }
   }
 }

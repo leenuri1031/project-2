@@ -16,4 +16,41 @@
 
 .flex-row {
   flex-direction: row;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: -100vw;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: -100vw;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@media (min-width: 450px) {
+  main > section:nth-child(1) > div:first-child {
+    width: 350px;
+    height: 350px;
+    background-color: #b6c6d6;
+    border-radius: 50%;
+  }
+  main > section:nth-child(1) > div:last-child {
+    font-size: 30px;
+    bottom: 100px;
+    color: #4d5b69;
+  }
 }/*# sourceMappingURL=tablet_ver.css.map */
