@@ -1,12 +1,11 @@
 $width-root:100vw;
-$height-root:150vh;
+$height-root:220vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
 $solid-red:1px solid #613c3c;
-$width-per:45%;
-$height-per:90%;
+$per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(182, 198, 214);
 $color-3:rgb(95, 135, 172);
@@ -18,7 +17,7 @@ $color-6:rgb(32, 42, 51);
 // ------------------------------------------------------------------
 
 
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
 // ------------------------------------------------------------------
 
@@ -69,10 +68,46 @@ $color-6:rgb(32, 42, 51);
   animation-timing-function: linear;
 }
 
+@mixin font-style($font-s, $font-w){
+  font-size: $font-s;
+  font-weight: $font-w;
+  color: $color-3;
+}
+
+
+
 
 
 // ------------------------------------------------------------------
 
+#root{
+  @include root-style;
+  background-color: $color-1;
+}
+
+header{
+  @include box-style($per-100, 100vh, $color-2);
+  border-radius: 0px 0px 80px 80px;
+  @include flex-setting(flex-end, flex-end );
+
+  &>div{
+    @include size(50vw, 5vh);
+    @include font-style(32px, 600);
+    position: relative;
+    right: 5vw;
+    bottom: 5vh
+  }
+}
+
+main{
+  @include size($per-100, 115vh);
+}
+
+footer{
+  @include size($per-100, 5vh); 
+  border: $solid-gray;
+
+}
 
 
 
