@@ -94,7 +94,6 @@ main > section:nth-child(1) > div > div {
 main > section:nth-child(2) {
   width: 100%;
   height: 60vh;
-  border: 1px solid #888;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -217,6 +216,12 @@ main > section:nth-child(3) > div:last-child > div:nth-child(2) {
 footer {
   width: 100%;
   height: 10vh;
-  border: 1px solid #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > p {
+  width: 90%;
+  height: 100%;
   text-align: center;
 }/*# sourceMappingURL=mobile.ver.css.map */

@@ -139,7 +139,6 @@ main{
 
   &>section:nth-child(2){
     @include size($per-100, 60vh);
-    border: $solid-gray;
     @include flex-setting(space-around, center);
     flex-direction: column;
 
@@ -261,8 +260,12 @@ main{
 // --------------- footer-text
 footer{
   @include size($per-100, 10vh);
-  border: $solid-gray;
-  text-align: center;
+  @include flex-setting(center, center);
+  
+  &>p{
+    @include size(90%, $per-100);
+    text-align: center;
+  }
 }
 
 
