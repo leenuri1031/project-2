@@ -157,7 +157,7 @@ $color-6:rgb(32, 42, 51);
 
   
         &>div:nth-child(1){
-          @include size(60%, $per-100);
+          @include size(70%, $per-100);
 
           &>div:first-child{
             margin-left: 5px;
@@ -170,7 +170,7 @@ $color-6:rgb(32, 42, 51);
               @include size(45%, 90%);
   
               &>li{
-                @include size(45%, 25%);
+                @include size(50%, 25%);
                 margin: 5px;
               }
             }
