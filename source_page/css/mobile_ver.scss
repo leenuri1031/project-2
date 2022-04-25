@@ -1,5 +1,5 @@
 $width-root:100vw;
-$height-root:120vh;
+$height-root:100vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
@@ -81,14 +81,14 @@ $color-6:rgb(32, 42, 51);
 
 
 // ------------------------------------------------------------------
-
 #root{
   @include root-style;
   color: $color-2;
+  @include flex-setting(center, center);
 }
 
 header{
-  @include size($per-100, 10vh);
+  @include size($per-100, 8vh);
   @include flex-setting(center, center);
 
   &>div{
@@ -103,107 +103,41 @@ header{
 }
 
 main{
-  @include size($per-100, 110vh);
+  @include size(90%, 90vh);
   @include flex-setting(center, center);
   flex-direction: column;
 
-
-
-  &>section{
-    @include size(95%, 50%);
-    @include flex-setting(space-around, center);
-    flex-direction: column;
-  }
-
   &>section:first-child{
+    @include size($per-100, 10vh);
+    border-bottom: $dotted-gray;
 
     &>h1{
-      @include size(90%, 20%);
-      @include flex-setting(flex-start, flex-end);
-      padding-bottom: 2vh;
-      border-bottom: $dotted-gray;
+      @include size($per-100, 8vh);
+      @include flex-setting(center, flex-end);
     }
+  }
+  
+  &>section:last-child{
+    @include size($per-100, 82vh);
+    @include flex-setting(center, center);
 
-    &>div:nth-child(2){
-      @include size(90%,40% );
-      @include flex-setting(space-between, flex-end);
-
-      &>div{
-        @include box-style(45%,90% , $color-2);
-      }
-    }
-
-    &>div:nth-child(3){
-      @include size(90%, 40% );
-      @include flex-setting(center, flex-start);
+    &>div{
+      @include size(90%, 90%);
+      @include flex-setting(space-evenly, center);
       flex-direction: column;
 
       &>p{
-        font-size: 14px;
-        margin-top: 1vh;
-      }
-
-      &>padding:nth-child(1){
-        @include size($per-100, 10% );
-      }
-
-      &>padding:nth-child(2){
-        @include size($per-100, 10% );
-      }
-
-      &>padding:nth-child(3){
-        @include size($per-100, 20% );
-      }
-
-      &>padding:nth-child(4){
-        @include size($per-100, 20% );
+        @include size(90%, 10%);
+        @include flex-setting(center, center);
+        cursor: pointer;
       }
     }
-  }
 
-  &>section:last-child{
-    
-    &>h3{
-    @include size(90%, 8% );
-    }
-
-    &>div{
-    @include size(90%, 85% );
-    @include flex-setting(space-around, center);
-    flex-direction: column;
-
-      &>div{
-        @include size(90%, 45% );
-        @include flex-setting(space-around, center);
-
-        &>div{
-          @include size(45%, $per-100 ); 
-          @include flex-setting(space-around, center);
-          flex-direction: column;
-
-          &>div:nth-child(1){
-            @include box-style(95%, 80%, $color-2);
-          }
-
-          &>div:nth-child(2){
-            @include size(45%, 10%);
-            cursor: pointer;
-          }
-        }
-      }
+    &>div:last-child{
+      display: none;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -29,6 +29,10 @@
     width: 90%;
     height: 50%;
   }
+  main > section:first-child > h1 {
+    width: 90%;
+    height: 15%;
+  }
   main > section:first-child > div:nth-child(2) > div {
     width: 40%;
     height: 100%;

@@ -38,6 +38,7 @@
   main > section:first-child > h1 {
     position: absolute;
     top: 10vh;
+    padding-bottom: 4vh;
   }
   main > section:first-child > div:nth-child(2) {
     width: 40%;

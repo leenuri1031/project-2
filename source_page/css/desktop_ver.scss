@@ -1,9 +1,10 @@
 $width-root:100vw;
-$height-root:120vh;
+$height-root:100vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
+$dotted-gray:2px dotted #888;
 $solid-red:1px solid #613c3c;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
@@ -80,53 +81,50 @@ $color-6:rgb(32, 42, 51);
 
 
 // ------------------------------------------------------------------
+@media(min-width:1020px){
 
-@media(min-width:500px){
+  header{
+    &>div{
+      display: none;
+    }
+  }
 
   main{
   
-    &>section{
-      @include size(90%, 50%);
-    }
-  
     &>section:first-child{
-
+      @include size($per-100, 8vh);
+      border-bottom: $dotted-gray;
+  
       &>h1{
-        @include size(90%, 15%);
-      }
-  
-      &>div:nth-child(2){
-  
-        &>div{
-          @include box-style(40%,$per-100 , $color-2);
-        }
-
-        &>h3{
-          @include size(55%, 30%);
-        }
-      }
-  
-      &>div:nth-child(3){
-        @include flex-setting(space-around, flex-start);
+        @include size($per-100, 8vh);
+        @include flex-setting(center, flex-start);
       }
     }
-  
+    
     &>section:last-child{
-      
+      @include size($per-100, 82vh);
+      @include flex-setting(center, center);
+  
       &>div{
-
-        &>div{
-
-          &>div{
-
-            &>div:nth-child(2){
-              
-              @include flex-setting(center, center);
-            }
-          }
-        }
+        @include size(50%, 90%);
+      }
+  
+      &>div:last-child{
+        display: flex;
       }
     }
   }
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
