@@ -172,18 +172,19 @@ main{
     &>div:nth-child(2){
       @include size(90%, 60%);
 
-      &>div:first-child{
+      &>div:nth-child(1){
         @include box-style(60%, 50%, $color-2);
         @include position-setting(1);
         bottom: 10vh;
       }
 
-      &>div:last-child{
+      &>div:nth-child(2){
         @include box-style(70%, 60%, $color-1);
         @include position-setting(2);
         right: 5vw;
         top: 2vh;
       }
+
     }
   }
 }
