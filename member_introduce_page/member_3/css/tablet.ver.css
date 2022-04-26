@@ -54,13 +54,15 @@
     background-color: rgb(222, 223, 224);
   }
   main > section:last-child > div:nth-child(2) > div:first-child {
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 85%;
     background-color: rgb(168, 168, 168);
+    bottom: 2vh;
   }
   main > section:last-child > div:nth-child(2) > div:last-child {
-    width: 60%;
-    height: 70%;
+    width: 45%;
+    height: 75%;
     background-color: rgb(222, 223, 224);
+    top: 4vh;
   }
 }/*# sourceMappingURL=tablet.ver.css.map */

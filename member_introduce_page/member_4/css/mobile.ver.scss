@@ -159,30 +159,35 @@ main{
 
     &>div:nth-child(1){
       @include size(90%, 35%);
+      order: 2;
+
 
       &>div:first-child{
-      @include size(45%, $per-100);
+        @include size(45%, $per-100);
+        @include position-setting(2);
+        bottom: 15vh;
       }
 
       &>div:last-child{
-        @include box-style(40%, 80%, $color-1);
+        @include box-style(50%, 90%, $color-1);
       }
     }
 
     &>div:nth-child(2){
       @include size(90%, 60%);
+      order: 1;
 
       &>div:nth-child(1){
         @include box-style(60%, 50%, $color-2);
         @include position-setting(1);
-        bottom: 10vh;
+        bottom: 12vh;
+        left: 3vw;
       }
 
       &>div:nth-child(2){
         @include box-style(70%, 60%, $color-1);
         @include position-setting(2);
-        right: 5vw;
-        top: 2vh;
+        bottom: 2vh;
       }
 
     }

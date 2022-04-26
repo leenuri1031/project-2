@@ -45,22 +45,27 @@
     background-color: rgb(222, 223, 224);
   }
   main > section:last-child > div:nth-child(1) > div:first-child {
-    width: 45%;
-    height: 50%;
+    width: 15%;
+    height: 80%;
+    bottom: 15vh;
+    right: 10vw;
   }
   main > section:last-child > div:nth-child(1) > div:last-child {
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-color: rgb(222, 223, 224);
   }
   main > section:last-child > div:nth-child(2) > div:first-child {
-    width: 60%;
-    height: 70%;
+    width: 40%;
+    height: 80%;
     background-color: rgb(168, 168, 168);
+    top: 3vh;
+    left: 12vw;
   }
   main > section:last-child > div:nth-child(2) > div:last-child {
-    width: 60%;
+    width: 40%;
     height: 70%;
     background-color: rgb(222, 223, 224);
+    bottom: 10vh;
   }
 }/*# sourceMappingURL=tablet.ver.css.map */

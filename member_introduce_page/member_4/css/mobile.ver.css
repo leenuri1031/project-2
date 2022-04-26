@@ -115,20 +115,25 @@ main > section:last-child > div {
 main > section:last-child > div:nth-child(1) {
   width: 90%;
   height: 35%;
+  order: 2;
 }
 main > section:last-child > div:nth-child(1) > div:first-child {
   width: 45%;
   height: 100%;
+  position: relative;
+  z-index: 2;
+  bottom: 15vh;
 }
 main > section:last-child > div:nth-child(1) > div:last-child {
-  width: 40%;
-  height: 80%;
+  width: 50%;
+  height: 90%;
   background-color: rgb(222, 223, 224);
   border-radius: 20px;
 }
 main > section:last-child > div:nth-child(2) {
   width: 90%;
   height: 60%;
+  order: 1;
 }
 main > section:last-child > div:nth-child(2) > div:nth-child(1) {
   width: 60%;
@@ -137,7 +142,8 @@ main > section:last-child > div:nth-child(2) > div:nth-child(1) {
   border-radius: 20px;
   position: relative;
   z-index: 1;
-  bottom: 10vh;
+  bottom: 12vh;
+  left: 3vw;
 }
 main > section:last-child > div:nth-child(2) > div:nth-child(2) {
   width: 70%;
@@ -146,6 +152,5 @@ main > section:last-child > div:nth-child(2) > div:nth-child(2) {
   border-radius: 20px;
   position: relative;
   z-index: 2;
-  right: 5vw;
-  top: 2vh;
+  bottom: 2vh;
 }/*# sourceMappingURL=mobile.ver.css.map */

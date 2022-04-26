@@ -175,7 +175,7 @@ main{
       &>div:nth-child(1){
         @include box-style(60%, 50%, $color-2);
         @include position-setting(1);
-        bottom: 10vh;
+        bottom: 8vh;
       }
 
       &>div:nth-child(2){

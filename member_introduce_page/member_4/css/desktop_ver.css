@@ -79,6 +79,18 @@
     width: 90%;
     height: 30%;
   }
+  main > section:last-child > div:nth-child(1) > div:first-child {
+    width: 50%;
+    height: 40%;
+    bottom: 0vh;
+    right: 3vw;
+  }
+  main > section:last-child > div:nth-child(1) > div:last-child {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(222, 223, 224);
+    border-radius: 20px;
+  }
   main > section:last-child > div:nth-child(2) {
     width: 90%;
     height: 60%;
@@ -89,19 +101,18 @@
   }
   main > section:last-child > div:nth-child(2) > div:nth-child(1) {
     width: 40%;
-    height: 50%;
+    height: 70%;
     background-color: rgb(168, 168, 168);
     border-radius: 20px;
-    top: 10vh;
-    right: 3vw;
+    top: 5vh;
+    right: 5vw;
   }
   main > section:last-child > div:nth-child(2) > div:nth-child(2) {
-    width: 60%;
-    height: 50%;
+    width: 50%;
+    height: 80%;
     background-color: rgb(222, 223, 224);
     border-radius: 20px;
-    top: 15vh;
-    right: -10vw;
-    top: -3vh;
+    top: 0vh;
+    right: 0vw;
   }
 }/*# sourceMappingURL=desktop_ver.css.map */
