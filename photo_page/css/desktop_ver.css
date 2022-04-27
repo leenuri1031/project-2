@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+@media (min-width: 1020px) {
+  header > div {
+    display: none;
+  }
+  header > h1 {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 4vw;
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=desktop_ver.css.map */
