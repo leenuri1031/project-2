@@ -56,7 +56,6 @@ $color-6:rgb(32, 42, 51);
   width: $w;
   height: $h;
   background-color: $col;
-  border-radius: 20px;
 }
 
 @mixin position-setting ($z-in,){
@@ -79,6 +78,13 @@ $color-6:rgb(32, 42, 51);
 }
 
 
+@mixin grid-style ($colum, $row){
+  display: grid;
+  grid-template-columns: $colum;
+  grid-template-rows: $row;
+  gap: 1vw;
+}
+
 
 
 // ------------------------------------------------------------------
@@ -87,5 +93,34 @@ $color-6:rgb(32, 42, 51);
 
 @media(min-width:1020px){
 
+  main{
+
+    &>section:nth-child(2){
+      @include grid-style(repeat(2, minmax(200px, auto)), repeat(6, minmax(150px, auto)));
+  
+  
+      &>div{
+        @include flex-setting(space-evenly, center );
+        flex-direction: row;
+  
+        div:first-child{
+          @include box-style(25%, 80%, $color-1);
+        }
+  
+        &>div:last-child{
+          @include size(30%, 20%);
+        }
+      }
+    }
+
+    &>section:nth-child(3){
+      @include size(80%, 10vh);
+      @include flex-setting(space-around, center);
+  
+      &>div{
+        @include box-style(8px, 8px, $color-1);
+      }
+    }
+  }
   
 }

@@ -210,15 +210,18 @@ main{
     &>div:first-child{
 
       &>div:nth-child(1){
-        @include size(30%,$per-100);
+        @include size(35%,85%);
+
 
         &>i{
+          @include size(15%,20%);
+          @include flex-setting(flex-start, center);
           cursor: pointer;
         }
       }
 
       &>div:nth-child(2){
-        @include box-style(65%, 60%, $color-2);
+        @include box-style(60%, 60%, $color-2);
 
       }
     }

@@ -22,4 +22,42 @@
 
 .flex-row {
   flex-direction: row;
+}
+
+@media (min-width: 500px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, auto));
+    grid-template-rows: repeat(6, minmax(150px, auto));
+    gap: 1vw;
+  }
+  main > section:nth-child(2) > div {
+    flex-direction: row;
+  }
+  main > section:nth-child(2) > div div:first-child {
+    width: 45%;
+    height: 90%;
+    background-color: rgb(222, 223, 224);
+  }
+  main > section:nth-child(2) > div > div:last-child {
+    width: 30%;
+    height: 20%;
+  }
+  main > section:nth-child(3) {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main > section:nth-child(3) > div {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(222, 223, 224);
+  }
 }/*# sourceMappingURL=tablet.ver.css.map */

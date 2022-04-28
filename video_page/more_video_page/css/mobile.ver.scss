@@ -135,7 +135,7 @@ main{
       flex-direction: column;
 
       div:first-child{
-        @include box-style(90%, 70%, $color-1);
+        @include box-style(60%, 80%, $color-1);
         cursor: pointer;
       }
 
