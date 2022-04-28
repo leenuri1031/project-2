@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+@media (min-width: 500px) {
+  #pop-up {
+    width: 90%;
+    height: 70%;
+    background-color: rgb(114, 114, 114);
+  }
+  #pop-up > div:last-child > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #pop-up > div:last-child > div:nth-child(1) > div:nth-child(1) {
+    width: 10%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #pop-up > div:last-child > div:nth-child(1) > div:nth-child(1) > i {
+    font-size: 2rem;
+  }
+  #pop-up > div:last-child > div:nth-child(1) > div:nth-child(2) {
+    width: 80%;
+    height: 30%;
+  }
+  #pop-up > div:last-child > div:nth-child(1) > div:nth-child(3) {
+    width: 10%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #pop-up > div:last-child > div:nth-child(1) > div:nth-child(3) > i {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=tablet.ver.css.map */
