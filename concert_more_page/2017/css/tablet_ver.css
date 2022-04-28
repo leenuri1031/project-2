@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+@media (min-width: 500px) {
+  main > section:last-child > div > div:last-child {
+    width: 25%;
+    height: 70%;
+    background-color: rgb(222, 223, 224);
+  }
+}/*# sourceMappingURL=tablet_ver.css.map */
