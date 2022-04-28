@@ -26,7 +26,7 @@
 
 #root {
   width: 100vw;
-  height: 120vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   color: rgb(168, 168, 168);
@@ -53,103 +53,64 @@ header > div > i {
 
 main {
   width: 100%;
-  height: 110vh;
+  height: 140vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-main > section {
-  width: 95%;
-  height: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-main > section:first-child > h1 {
+main > section:nth-child(1) {
   width: 90%;
-  height: 20%;
+  height: 10vh;
+  padding-left: 2vw;
+}
+main > section:nth-child(1) > h1 {
+  width: 100%;
+  height: 90%;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
-  padding-bottom: 2vh;
+  align-items: center;
   border-bottom: 2px dotted #888;
 }
-main > section:first-child > div:nth-child(2) {
+main > section:nth-child(2) {
   width: 90%;
-  height: 40%;
+  height: 115vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, auto));
+  grid-template-rows: repeat(6, minmax(100px, auto));
+  gap: 1vw;
+}
+main > section:nth-child(2) > div {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
-main > section:first-child > div:nth-child(2) > div {
-  width: 45%;
-  height: 90%;
-  background-color: rgb(168, 168, 168);
-}
-main > section:first-child > div:nth-child(3) {
+main > section:nth-child(2) > div div:first-child {
   width: 90%;
-  height: 40%;
+  height: 70%;
+  background-color: rgb(222, 223, 224);
+  cursor: pointer;
+}
+main > section:nth-child(2) > div > div:last-child {
+  width: 90%;
+  height: 10%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
 }
-main > section:first-child > div:nth-child(3) > p {
-  font-size: 14px;
-  margin-top: 1vh;
-}
-main > section:first-child > div:nth-child(3) > padding:nth-child(1) {
-  width: 100%;
-  height: 10%;
-}
-main > section:first-child > div:nth-child(3) > padding:nth-child(2) {
-  width: 100%;
-  height: 10%;
-}
-main > section:first-child > div:nth-child(3) > padding:nth-child(3) {
-  width: 100%;
-  height: 20%;
-}
-main > section:first-child > div:nth-child(3) > padding:nth-child(4) {
-  width: 100%;
-  height: 20%;
-}
-main > section:last-child > h3 {
+main > section:nth-child(3) {
   width: 90%;
-  height: 8%;
-}
-main > section:last-child > div {
-  width: 90%;
-  height: 85%;
+  height: 15vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-main > section:last-child > div > div {
-  width: 90%;
-  height: 45%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-main > section:last-child > div > div > div {
-  width: 45%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-main > section:last-child > div > div > div > div:nth-child(1) {
-  width: 95%;
-  height: 80%;
-  background-color: rgb(168, 168, 168);
-}
-main > section:last-child > div > div > div > div:nth-child(2) {
-  width: 45%;
-  height: 10%;
-  cursor: pointer;
+main > section:nth-child(3) > div {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(222, 223, 224);
+  border-radius: 50%;
+  margin: 10px;
 }/*# sourceMappingURL=mobile.ver.css.map */
