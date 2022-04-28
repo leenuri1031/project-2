@@ -1,9 +1,10 @@
 $width-root:100vw;
-$height-root:120vh;
+$height-root:100vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
+$dotted-gray:2px dotted #888;
 $solid-red:1px solid #613c3c;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
@@ -77,14 +78,90 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-@mixin grid-style {
+@mixin grid-style($rep) {
   display: grid;
-  grid-template-columns: repeat(7, minmax(200px, auto));
+  grid-template-rows: $rep;
   gap: 1vw;
 }
 
-// ------------------------------------------------------------------
-
-@media(min-width:500px){
-  
+@mixin btn-style($w, $h) {
+  width: $w;
+  height: $h;
+  border: $solid-gray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
+
+
+// ------------------------------------------------------------------
+#root{
+  @include root-style;
+  color: $color-2;
+  @include flex-setting(center, center);
+}
+
+header{
+  @include size($per-100, 8vh);
+  @include flex-setting(center, center);
+
+  &>div{
+    @include size(95%, $per-100);
+    @include flex-setting(flex-end, flex-end);
+
+    &>i{
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+main{
+  @include size($per-100, 90vh);
+  @include flex-setting(center, center);
+  flex-direction: column;
+
+  &>section:first-child{
+    @include size(90%, 10vh);
+    border-bottom: $dotted-gray;
+  }
+  
+  &>section:last-child{
+    @include size(90%, 80vh);
+    @include grid-style(repeat(6, minmax(10%, auto)));
+
+    &>div{
+      @include flex-setting(space-evenly, flex-end);
+      flex-direction: column;
+
+      &>div:first-child{
+        @include size($per-100, 50%);
+        @include flex-setting(space-around, center);
+        flex-direction: column;
+
+        &>p:nth-child(1){
+          @include size(90%, 20%);
+        }
+        
+        &>p:nth-child(2){
+          @include size(90%, 40%);
+        }
+      }
+
+      &>div:last-child{
+        @include btn-style(15%, 15%);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

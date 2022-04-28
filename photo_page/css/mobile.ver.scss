@@ -1,5 +1,5 @@
 $width-root:100vw;
-$height-root:120vh;
+$height-root:150vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
@@ -78,6 +78,12 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
+@mixin grid-style {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, auto));
+  gap: 1vw;
+}
+
 
 
 // ------------------------------------------------------------------
@@ -112,18 +118,28 @@ header{
 
 
 main{
-  @include size($per-100, 100vh);
+  @include size($per-100, 130vh);
   @include flex-setting(space-around, center);
   flex-direction: column;
 
   &>section{
-    @include size(95%, 30vh);
-    display: flex;
-    overflow: hidden;
+    @include size($per-100, 30vh);
+    @include flex-setting(space-around, flex-end);
+    flex-direction: column;
 
-    &>div{
-      @include box-style(250px, 250px,$color-1 );
-      border: $solid-black;
+    &>div:first-child{
+      @include size(95%, 10%);
+    }
+
+    &>div:last-child{
+      @include size(95%, 80%);
+      overflow: hidden;
+      @include grid-style();
+
+      &>div{
+        background-color: $color-1;
+        cursor: pointer;
+      }
     }
   }
 }

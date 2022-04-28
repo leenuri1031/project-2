@@ -77,7 +77,11 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
+@mixin grid-style {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(200px, auto));
+  gap: 1vw;
+}
 
 // ------------------------------------------------------------------
 
@@ -98,7 +102,5 @@ $color-6:rgb(32, 42, 51);
     padding-bottom: 10px;
     }
   }
-
- 
 
 }
