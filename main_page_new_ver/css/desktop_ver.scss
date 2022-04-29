@@ -77,15 +77,23 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 // ------------------------------------------------------------------
 
-@media(min-width:1020px){
+@media(min-width:1600px){
 
   // -------------- header-img
 
 header{
+  @include bgimg-style(url(./img/about_forestella_img.png));
+  background-position:  top;
+
 
   &>h2{
     margin-right: 5vw;
@@ -97,7 +105,13 @@ header{
 
 main{
   &>section:nth-child(1){
-    height: 40vh;
+    background-position:  right 1% bottom 25%;
+
+    &>div{
+      &>div{
+        @include size(8%, 15% );
+      }
+    }
   }
 
   &>section:nth-child(2){
@@ -110,9 +124,14 @@ main{
     }
 
     &>div:first-child{
+      
+      &>div:nth-child(1){
+        @include size(60%,70% );
+      }
 
+      
       &>div:nth-child(2){
-        padding: 20px;
+        @include size(25%, 60%);
       }
     }
 

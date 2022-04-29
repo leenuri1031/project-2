@@ -5,6 +5,7 @@ $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
 $solid-red:1px solid #613c3c;
+$solid-col:1px solid #AACCBE;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(168, 168, 168);
@@ -77,26 +78,34 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+// 
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style ;
-  color: $color-2;
+  background-color: #BCDAC5;
 }
 
 // -------------- header-img
 
 header{
-  @include box-style($per-100, 55vh, $color-2);
+  @include size($per-100, 55vh);
   @include flex-setting(flex-end, flex-end);
+  @include bgimg-style(url(./img/main_img.png));
 
 
   &>h2{
     @include text-style(center, center);
     margin-right: 10px;
     margin-bottom: 15px;
+    color: #AACCBE;
   }
 }
 
@@ -105,11 +114,17 @@ main{
   @include size($per-100, 155vh);
   @include flex-setting(space-between, center);
   flex-direction: column;
+  color: #AACCBE;
+
 
   &>section:nth-child(1){
-    @include box-style($per-100, 30vh, $color-1);
+    @include size($per-100, 30vh);
+    @include bgimg-style(url(./img/about_forestella_img.png));
+    background-position: center;
     @include flex-setting(center, center);
     flex-direction: column;
+    color: #4F787D;
+
 
     
     &>div{
@@ -118,13 +133,15 @@ main{
       flex-direction: column;
 
 
+
+
       &>h3{
         @include size($per-100, 35% );
       }
 
       &>div{
         @include size(20%, 20% );
-        border: $solid-gray;
+        border: $solid-col;
         border-radius: 30px;
         @include flex-setting(center, center);
         position: relative;
@@ -145,14 +162,16 @@ main{
     &>div{
       width: 90%;
       flex-grow: 1;
-      color: $color-2;
+      color: #4F787D;
       @include flex-setting(space-between, center);
     }
 
     &>div:first-child{
 
       &>div:nth-child(1){
-        @include box-style(50%, 60%, $color-2);
+        @include size(50%,60% );
+        @include bgimg-style(url(./img/must_see_video_img.png));
+        
       }
 
       
@@ -174,12 +193,14 @@ main{
         flex-direction: column;
 
         &>div:nth-child(1){
-          @include box-style(70%,60% ,$color-2 );
+          @include size(90%,60%);
+
           @include flex-setting(center, center);
 
           &>i{
             @include font-style(1.5rem, 500);
             cursor: pointer;
+            color: #AACCBE;
           }
         }
 
@@ -187,6 +208,18 @@ main{
           @include size(70%, 20%);
           @include flex-setting(center, center);
           text-align: center;
+        }
+      }
+
+      &>div:nth-child(1){
+        &>div:nth-child(1){
+          @include bgimg-style(url(./img/bohemian_rapsody_img.png));
+        }
+      }
+
+      &>div:nth-child(2){
+        &>div:nth-child(1){
+          @include bgimg-style(url(./img/shape_of_you_img.png));
         }
       }
 
@@ -200,6 +233,8 @@ main{
     @include size($per-100, 65vh);
     @include flex-setting(center, center);
     flex-direction: column;
+    color: #4F787D;
+
 
     &>div{
       width: 90%;
@@ -221,8 +256,8 @@ main{
       }
 
       &>div:nth-child(2){
-        @include box-style(60%, 60%, $color-2);
-
+        @include size(60%, 60%);
+        @include bgimg-style(url(./img/forestella_music_img.png));
       }
     }
 
@@ -253,7 +288,9 @@ main{
 
       &>div:nth-child(2){
         margin-top: 12px;
-        @include box-style(35%,50% , $color-2);
+        @include size(40%, 50%);
+        @include bgimg-style(url(./img/menu_img.png));
+        
       }
     }
     
@@ -269,6 +306,7 @@ footer{
   &>p{
     @include size(90%, 70%);
     text-align: center;
+    color: #4F787D;
   }
 }
 

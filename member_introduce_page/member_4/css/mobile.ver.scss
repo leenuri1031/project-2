@@ -79,13 +79,19 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header{
@@ -127,11 +133,12 @@ main{
       @include flex-setting(space-between, center);
 
       &>div:first-child{
-        @include box-style(40%, 60%, $color-1);
+        @include size(45%, 60%);
+        @include bgimg-style(url(./img/고우림.png));
       }
 
       &>div:last-child{
-        @include size(55%, $per-100);
+        @include size(50%, $per-100);
         @include flex-setting(space-evenly, flex-start);
         flex-direction: column;
 
@@ -169,7 +176,8 @@ main{
       }
 
       &>div:last-child{
-        @include box-style(50%, 90%, $color-1);
+        @include size(60%, 90%);
+        @include bgimg-style(url(./img/member1.png));
       }
     }
 
@@ -178,14 +186,16 @@ main{
       order: 1;
 
       &>div:nth-child(1){
-        @include box-style(60%, 50%, $color-2);
+        @include size(60%, 50%);
+        @include bgimg-style(url(./img/member2.png));
         @include position-setting(1);
         bottom: 12vh;
         left: 3vw;
       }
 
       &>div:nth-child(2){
-        @include box-style(70%, 60%, $color-1);
+        @include size(70%, 60%);
+        @include bgimg-style(url(./img/member3.png));
         @include position-setting(2);
         bottom: 2vh;
       }

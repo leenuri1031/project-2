@@ -24,14 +24,24 @@
   flex-direction: row;
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1600px) {
+  header {
+    background-image: url(./img/about_forestella_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
   header > h2 {
     margin-right: 5vw;
     margin-bottom: 5vh;
   }
 
   main > section:nth-child(1) {
-    height: 40vh;
+    background-position: right 1% bottom 25%;
+  }
+  main > section:nth-child(1) > div > div {
+    width: 8%;
+    height: 15%;
   }
   main > section:nth-child(2) {
     height: 65vh;
@@ -44,8 +54,13 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  main > section:nth-child(2) > div:first-child > div:nth-child(1) {
+    width: 60%;
+    height: 70%;
+  }
   main > section:nth-child(2) > div:first-child > div:nth-child(2) {
-    padding: 20px;
+    width: 25%;
+    height: 60%;
   }
   main > section:nth-child(2) > div:last-child > div {
     width: 30%;

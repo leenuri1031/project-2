@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,8 @@
   height: 120vh;
   display: flex;
   flex-direction: column;
-  color: rgb(168, 168, 168);
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header {
@@ -80,13 +82,15 @@ main > section:first-child > div {
   align-items: center;
 }
 main > section:first-child > div > div:first-child {
-  width: 40%;
+  width: 45%;
   height: 60%;
-  background-color: rgb(222, 223, 224);
+  background-image: url(./img/조민규.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 20px;
 }
 main > section:first-child > div > div:last-child {
-  width: 55%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -123,10 +127,13 @@ main > section:last-child > div:nth-child(1) > div:first-child {
   order: 2;
 }
 main > section:last-child > div:nth-child(1) > div:last-child {
-  width: 40%;
+  width: 50%;
   height: 90%;
-  background-color: rgb(222, 223, 224);
+  background-image: url(./img/member1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 20px;
+  background-position: center;
   order: 1;
 }
 main > section:last-child > div:nth-child(2) {
@@ -137,7 +144,9 @@ main > section:last-child > div:nth-child(2) {
 main > section:last-child > div:nth-child(2) > div:nth-child(1) {
   width: 60%;
   height: 50%;
-  background-color: rgb(168, 168, 168);
+  background-image: url(./img/member2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 20px;
   position: relative;
   z-index: 1;
@@ -146,8 +155,11 @@ main > section:last-child > div:nth-child(2) > div:nth-child(1) {
 main > section:last-child > div:nth-child(2) > div:nth-child(2) {
   width: 70%;
   height: 60%;
-  background-color: rgb(222, 223, 224);
+  background-image: url(./img/member3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 20px;
+  background-position: center;
   position: relative;
   z-index: 2;
   right: 5vw;

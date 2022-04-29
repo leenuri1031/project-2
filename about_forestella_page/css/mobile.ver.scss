@@ -78,13 +78,20 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  background-color: #BCDAC5;
+  color: #4F787D;
 }
 
 header{
@@ -129,7 +136,8 @@ main{
       @include flex-setting(space-between, flex-end);
 
       &>div{
-        @include box-style(45%,90% , $color-2);
+        @include size(45%,90% );
+        @include bgimg-style(url(./img/about_forestella_main_img.png));
       }
     }
 
@@ -172,6 +180,34 @@ main{
     @include flex-setting(space-around, center);
     flex-direction: column;
 
+      &>div:first-child{
+        &>div:first-child{
+          &>div:first-child{
+            @include bgimg-style(url(./img/배두훈.png))
+          }
+        }
+
+        &>div:last-child{
+            &>div:first-child{
+              @include bgimg-style(url(./img/강형호.png))
+            }
+        }
+      }
+
+      &>div:last-child{
+        &>div:first-child{
+          &>div:first-child{
+            @include bgimg-style(url(./img/조민규.png))
+          }
+        }
+
+        &>div:last-child{
+            &>div:first-child{
+              @include bgimg-style(url(./img/고우림.png))
+            }
+        }
+      }
+
       &>div{
         @include size(90%, 45% );
         @include flex-setting(space-around, center);
@@ -182,7 +218,7 @@ main{
           flex-direction: column;
 
           &>div:nth-child(1){
-            @include box-style(95%, 80%, $color-2);
+            @include size(95%, 80%);
           }
 
           &>div:nth-child(2){
