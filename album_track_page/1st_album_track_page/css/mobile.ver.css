@@ -29,7 +29,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: rgb(168, 168, 168);
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header {

@@ -78,13 +78,17 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header{
