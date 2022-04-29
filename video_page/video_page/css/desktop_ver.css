@@ -53,8 +53,6 @@
   main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(1) {
     width: 120px;
     height: 120px;
-    background-color: rgb(222, 223, 224);
-    border-radius: 20px;
   }
   main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(2) {
     width: 50%;
@@ -73,8 +71,6 @@
   main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(1) {
     width: 120px;
     height: 120px;
-    background-color: rgb(222, 223, 224);
-    border-radius: 20px;
   }
   main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(2) {
     width: 50%;
@@ -89,7 +85,7 @@
   main > div {
     width: 10%;
     height: 4%;
-    border: 1px solid #888;
+    border: 1px solid #4F787D;
     border-radius: 20px;
     display: flex;
     justify-content: center;

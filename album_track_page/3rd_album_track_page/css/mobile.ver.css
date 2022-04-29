@@ -29,7 +29,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: rgb(168, 168, 168);
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header {
@@ -73,7 +74,9 @@ main > section:first-child {
 main > section:first-child > div:first-child {
   width: 30%;
   height: 60%;
-  background-color: rgb(222, 223, 224);
+  background-image: url(./img/3rd_album.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main > section:first-child > div:last-child {
   width: 40%;

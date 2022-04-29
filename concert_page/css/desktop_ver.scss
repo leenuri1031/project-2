@@ -5,6 +5,7 @@ $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
 $dotted-gray:2px dotted #888;
+$solid-col:1px solid #4F787D;
 $solid-red:1px solid #613c3c;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
@@ -87,7 +88,7 @@ $color-6:rgb(32, 42, 51);
 @mixin btn-style($w, $h) {
   width: $w;
   height: $h;
-  border: $solid-gray;
+  border: $solid-col;
   border-radius: 20px;
   display: flex;
   justify-content: center;

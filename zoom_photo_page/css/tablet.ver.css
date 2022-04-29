@@ -28,7 +28,7 @@
   #pop-up {
     width: 90%;
     height: 70%;
-    background-color: rgb(114, 114, 114);
+    background-color: #AACCBE;
   }
   #pop-up > div:last-child > div:nth-child(1) {
     display: flex;

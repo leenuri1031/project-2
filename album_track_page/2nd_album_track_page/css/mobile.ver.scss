@@ -78,13 +78,24 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header{
@@ -118,7 +129,8 @@ main{
     @include flex-setting(space-around, center);
 
     &>div:first-child{
-      @include box-style(30%, 60%, $color-1);
+      @include size(30%, 60%);
+      @include bgimg-style(url(./img/2nd_album.png));
     }
 
     &>div:last-child{

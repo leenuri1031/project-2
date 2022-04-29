@@ -83,6 +83,12 @@ $color-6:rgb(32, 42, 51);
   gap: 1vw;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 // ------------------------------------------------------------------
 
 

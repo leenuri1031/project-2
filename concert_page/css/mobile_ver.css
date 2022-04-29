@@ -29,7 +29,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: rgb(168, 168, 168);
+  background-color: #BCDAC5;
+  color: #4F787D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,8 +99,8 @@ main > section:last-child > div > div:first-child > p:nth-child(2) {
 }
 main > section:last-child > div > div:last-child {
   width: 15%;
-  height: 15%;
-  border: 1px solid #888;
+  height: 18%;
+  border: 1px solid #4F787D;
   border-radius: 20px;
   display: flex;
   justify-content: center;

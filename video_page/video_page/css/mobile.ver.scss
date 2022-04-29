@@ -6,6 +6,7 @@ $solid-black:1px solid black;
 $solid-gray:1px solid #888;
 $dotted-gray:2px dotted #888;
 $solid-red:1px solid #613c3c;
+$solid-col:1px solid #4F787D;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(168, 168, 168);
@@ -13,6 +14,7 @@ $color-3:rgb(114, 114, 114);
 $color-4:rgb(73, 73, 73);
 $color-5:rgb(77, 91, 105);
 $color-6:rgb(32, 42, 51);
+
 
 
 // ------------------------------------------------------------------
@@ -79,13 +81,19 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header{
@@ -141,7 +149,7 @@ main{
           @include flex-setting(space-between, center);
 
           &>div:nth-child(1){
-            @include box-style(100px, 100px,$color-1 );
+            @include size(100px, 100px);
             cursor: pointer;
           }
 
@@ -153,6 +161,24 @@ main{
             &>p:nth-child(2){
               font-size: 12px;
             }
+          }
+        }
+
+        &>div:nth-child(1){
+          &>div:nth-child(1){
+            @include bgimg-style(url(./img/video_1.png));
+          }
+        }
+
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            @include bgimg-style(url(./img/video_2.png));
+          }
+        }
+
+        &>div:nth-child(3){
+          &>div:nth-child(1){
+            @include bgimg-style(url(./img/video_3.png));
           }
         }
 
@@ -170,7 +196,7 @@ main{
           @include flex-setting(space-between, center);
 
           &>div:nth-child(1){
-            @include box-style(100px, 100px,$color-1 );
+            @include size(100px, 100px);
             cursor: pointer;
           }
 
@@ -186,6 +212,24 @@ main{
 
         }
 
+        &>div:nth-child(1){
+          &>div:nth-child(1){
+            @include bgimg-style(url(./img/video_5.png));
+          }
+        }
+
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            @include bgimg-style(url(./img/video_6.png));
+          }
+        }
+
+        &>div:nth-child(3){
+          &>div:nth-child(1){
+            @include bgimg-style(url(./img/video_7.png));
+          }
+        }
+
         &>div:nth-child(4){
           display: none;
         }
@@ -194,7 +238,7 @@ main{
 
     &>div:last-child{
       @include size(20%, 4%);
-      border: $solid-gray;
+      border: $solid-col;
       border-radius: 20px;
       @include flex-setting(center, center);
       cursor: pointer;

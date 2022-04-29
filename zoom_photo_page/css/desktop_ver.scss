@@ -5,10 +5,11 @@ $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
 $solid-red:1px solid #613c3c;
+$solid-col:1px solid #4F787D;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(168, 168, 168);
-$color-3:rgb(114, 114, 114);
+$color-3:#AACCBE;
 $color-4:rgb(73, 73, 73);
 $color-5:rgb(77, 91, 105);
 $color-6:rgb(32, 42, 51);
@@ -84,7 +85,6 @@ $color-6:rgb(32, 42, 51);
 }
 
 @mixin pop-up-style {
-  opacity: 0.8;
   position: absolute;
   left: 5vw;
   top: 25vh;
@@ -94,13 +94,21 @@ $color-6:rgb(32, 42, 51);
 @mixin btn-style($w, $h) {
   width: $w;
   height: $h;
-  border: $solid-gray;
+  border: $solid-col;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
+
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
 
 // ------------------------------------------------------------------
 

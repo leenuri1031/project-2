@@ -83,6 +83,13 @@ $color-6:rgb(32, 42, 51);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 // ------------------------------------------------------------------
 
 #root{
@@ -122,7 +129,8 @@ main{
     @include flex-setting(space-around, center);
 
     &>div:first-child{
-      @include box-style(30%, 60%, $color-1);
+      @include size(30%, 60%);
+      @include bgimg-style(url(./img/1st_album.png));
     }
 
     &>div:last-child{

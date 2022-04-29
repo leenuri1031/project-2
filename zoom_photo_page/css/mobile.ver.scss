@@ -6,10 +6,11 @@ $solid-black:1px solid black;
 $solid-gray:1px solid #888;
 $dotted-gray:2px dotted #888;
 $solid-red:1px solid #613c3c;
+$solid-col:1px solid #4F787D;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(168, 168, 168);
-$color-3:rgb(114, 114, 114);
+$color-3:#AACCBE;
 $color-4:rgb(73, 73, 73);
 $color-5:rgb(77, 91, 105);
 $color-6:rgb(32, 42, 51);
@@ -85,7 +86,6 @@ $color-6:rgb(32, 42, 51);
 }
 
 @mixin pop-up-style {
-  opacity: 0.8;
   position: absolute;
   left: 5vw;
   top: 25vh;
@@ -94,7 +94,7 @@ $color-6:rgb(32, 42, 51);
 @mixin btn-style($w, $h) {
   width: $w;
   height: $h;
-  border: $solid-gray;
+  border: $solid-col;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -102,12 +102,20 @@ $color-6:rgb(32, 42, 51);
   cursor: pointer;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header{
@@ -154,7 +162,59 @@ main{
       @include grid-style();
 
       &>div{
-        background-color: $color-1;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &>section:nth-child(1){
+
+    &>div:last-child{
+
+      &>div:nth-child(1){
+        @include bgimg-style(url(./img/배두훈1.png));
+      }
+
+      &>div:nth-child(2){
+        @include bgimg-style(url(./img/배두훈2.png));
+      }
+
+      &>div:nth-child(3){
+        @include bgimg-style(url(./img/배두훈3.png));
+      }
+
+      &>div:nth-child(4){
+        @include bgimg-style(url(./img/배두훈4.png));
+      }
+
+      &>div:nth-child(5){
+        @include bgimg-style(url(./img/배두훈5.png));
+      }
+    }
+  }
+
+  &>section:nth-child(2){
+
+    &>div:last-child{
+
+      &>div:nth-child(1){
+        @include bgimg-style(url(./img/강형호1.png));
+      }
+
+      &>div:nth-child(2){
+        @include bgimg-style(url(./img/강형호2.png));
+      }
+
+      &>div:nth-child(3){
+        @include bgimg-style(url(./img/강형호3.png));
+      }
+
+      &>div:nth-child(4){
+        @include bgimg-style(url(./img/강형호4.png));
+      }
+
+      &>div:nth-child(5){
+        @include bgimg-style(url(./img/강형호5.png));
       }
     }
   }
@@ -176,7 +236,8 @@ main{
   flex-direction: column;
 
   &>div:first-child{
-    @include box-style(90%, 55%, $color-2);
+    @include size(90%, 55%);
+    @include bgimg-style(url(./img/고우림2.png));
   }
 
   &>div:last-child{

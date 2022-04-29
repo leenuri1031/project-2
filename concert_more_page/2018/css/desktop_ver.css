@@ -31,7 +31,8 @@
 
   main > section:last-child > div > div:last-child {
     width: 15%;
-    height: 80%;
+    height: 90%;
     background-color: rgb(222, 223, 224);
+    background-position: center;
   }
 }/*# sourceMappingURL=desktop_ver.css.map */

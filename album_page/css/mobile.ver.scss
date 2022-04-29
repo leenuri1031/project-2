@@ -132,8 +132,6 @@ main{
 
     &>div:first-child{
       @include size(35%, 50%);
-      border: $solid-black;
-      // bgimg가 들어가지지 않음 -> section:nth-child(1){&>div:first-child{}} 처럼 밖으로하나씩 빼서 스타일링해주려고 했는데 안되고 있음 
     }
 
     &>div:last-child{
@@ -163,12 +161,23 @@ main{
     }
   }
 
-  &>section:nth-child(1){
-    &>div:first-child{
-      border: $solid-black;
+  &>section:nth-child(2){
+    &>div:nth-child(1){
+      @include bgimg-style(url(./img/1st_album.png));
     }
   }
 
+  &>section:nth-child(3){
+    &>div:nth-child(1){
+      @include bgimg-style(url(./img/2nd_album.png));
+    }
+  }
+  
+  &>section:nth-child(4){
+    &>div:nth-child(1){
+      @include bgimg-style(url(./img/3rd_album.png));
+    }
+  }
 }
 
 

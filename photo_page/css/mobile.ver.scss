@@ -84,13 +84,19 @@ $color-6:rgb(32, 42, 51);
   gap: 1vw;
 }
 
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 // ------------------------------------------------------------------
 
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header{
@@ -137,8 +143,111 @@ main{
       @include grid-style();
 
       &>div{
-        background-color: $color-1;
         cursor: pointer;
+      }
+    }
+  }
+
+  &>section:nth-child(1){
+
+    &>div:last-child{
+
+      &>div:nth-child(1){
+        @include bgimg-style(url(./img/배두훈1.png));
+      }
+
+      &>div:nth-child(2){
+        @include bgimg-style(url(./img/배두훈2.png));
+      }
+
+      &>div:nth-child(3){
+        @include bgimg-style(url(./img/배두훈3.png));
+      }
+
+      &>div:nth-child(4){
+        @include bgimg-style(url(./img/배두훈4.png));
+      }
+
+      &>div:nth-child(5){
+        @include bgimg-style(url(./img/배두훈5.png));
+      }
+    }
+  }
+
+  &>section:nth-child(2){
+
+    &>div:last-child{
+
+      &>div:nth-child(1){
+        @include bgimg-style(url(./img/강형호1.png));
+      }
+
+      &>div:nth-child(2){
+        @include bgimg-style(url(./img/강형호2.png));
+      }
+
+      &>div:nth-child(3){
+        @include bgimg-style(url(./img/강형호3.png));
+      }
+
+      &>div:nth-child(4){
+        @include bgimg-style(url(./img/강형호4.png));
+      }
+
+      &>div:nth-child(5){
+        @include bgimg-style(url(./img/강형호5.png));
+      }
+    }
+  }
+
+  &>section:nth-child(3){
+
+    &>div:last-child{
+
+      &>div:nth-child(1){
+        @include bgimg-style(url(./img/조민규1.png));
+      }
+
+      &>div:nth-child(2){
+        @include bgimg-style(url(./img/조민규2.png));
+      }
+
+      &>div:nth-child(3){
+        @include bgimg-style(url(./img/조민규3.png));
+      }
+
+      &>div:nth-child(4){
+        @include bgimg-style(url(./img/조민규4.png));
+      }
+
+      &>div:nth-child(5){
+        @include bgimg-style(url(./img/조민규5.png));
+      }
+    }
+  }
+
+  &>section:nth-child(4){
+
+    &>div:last-child{
+
+      &>div:nth-child(1){
+        @include bgimg-style(url(./img/고우림1.png));
+      }
+
+      &>div:nth-child(2){
+        @include bgimg-style(url(./img/고우림2.png));
+      }
+
+      &>div:nth-child(3){
+        @include bgimg-style(url(./img/고우림3.png));
+      }
+
+      &>div:nth-child(4){
+        @include bgimg-style(url(./img/고우림4.png));
+      }
+
+      &>div:nth-child(5){
+        @include bgimg-style(url(./img/고우림5.png));
       }
     }
   }

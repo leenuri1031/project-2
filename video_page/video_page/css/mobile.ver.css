@@ -29,7 +29,8 @@
   height: 110vh;
   display: flex;
   flex-direction: column;
-  color: rgb(168, 168, 168);
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header {
@@ -107,8 +108,6 @@ main > section:nth-child(2) > div:first-child > div:first-child > div {
 main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(1) {
   width: 100px;
   height: 100px;
-  background-color: rgb(222, 223, 224);
-  border-radius: 20px;
   cursor: pointer;
 }
 main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(2) {
@@ -121,6 +120,24 @@ main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-
 }
 main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(2) > p:nth-child(2) {
   font-size: 12px;
+}
+main > section:nth-child(2) > div:first-child > div:first-child > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(./img/video_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+main > section:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:nth-child(1) {
+  background-image: url(./img/video_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+main > section:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(1) {
+  background-image: url(./img/video_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 main > section:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) {
   display: none;
@@ -141,8 +158,6 @@ main > section:nth-child(2) > div:first-child > div:last-child > div {
 main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(1) {
   width: 100px;
   height: 100px;
-  background-color: rgb(222, 223, 224);
-  border-radius: 20px;
   cursor: pointer;
 }
 main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(2) {
@@ -156,13 +171,31 @@ main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-c
 main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(2) > p:nth-child(2) {
   font-size: 12px;
 }
+main > section:nth-child(2) > div:first-child > div:last-child > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(./img/video_5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+main > section:nth-child(2) > div:first-child > div:last-child > div:nth-child(2) > div:nth-child(1) {
+  background-image: url(./img/video_6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+main > section:nth-child(2) > div:first-child > div:last-child > div:nth-child(3) > div:nth-child(1) {
+  background-image: url(./img/video_7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
 main > section:nth-child(2) > div:first-child > div:last-child > div:nth-child(4) {
   display: none;
 }
 main > section:nth-child(2) > div:last-child {
   width: 20%;
   height: 4%;
-  border: 1px solid #888;
+  border: 1px solid #4F787D;
   border-radius: 20px;
   display: flex;
   justify-content: center;

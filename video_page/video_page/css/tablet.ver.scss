@@ -1,10 +1,12 @@
 $width-root:100vw;
-$height-root:100vh;
+$height-root:110vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
+$dotted-gray:2px dotted #888;
 $solid-red:1px solid #613c3c;
+$solid-col:1px solid #4F787D;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(168, 168, 168);
@@ -78,7 +80,12 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
 
 
 // ------------------------------------------------------------------
@@ -121,7 +128,7 @@ $color-6:rgb(32, 42, 51);
 
   
             &>div:nth-child(1){
-              @include box-style(110px, 110px,$color-1 );
+              @include size(110px, 110px);
               cursor: pointer;
             }
   
@@ -132,6 +139,9 @@ $color-6:rgb(32, 42, 51);
   
           &>div:nth-child(4){
             display: flex;
+            &>div:nth-child(1){
+              @include bgimg-style(url(./img/video_4.png));
+            }
           }
         }
   
@@ -144,7 +154,7 @@ $color-6:rgb(32, 42, 51);
             @include flex-setting(space-between, center);
   
             &>div:nth-child(1){
-              @include box-style(110px, 110px,$color-1 );
+              @include size(110px, 110px);
               cursor: pointer;
             }
   
@@ -155,6 +165,9 @@ $color-6:rgb(32, 42, 51);
   
           &>div:nth-child(4){
             display: flex ;
+            &>div:nth-child(1){
+              @include bgimg-style(url(./img/video_8.png));
+            }
           }
         }
       }

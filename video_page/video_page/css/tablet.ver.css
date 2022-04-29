@@ -71,8 +71,6 @@
   main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(1) {
     width: 110px;
     height: 110px;
-    background-color: rgb(222, 223, 224);
-    border-radius: 20px;
     cursor: pointer;
   }
   main > section:nth-child(2) > div:first-child > div:first-child > div > div:nth-child(2) {
@@ -81,6 +79,12 @@
   }
   main > section:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) {
     display: flex;
+  }
+  main > section:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div:nth-child(1) {
+    background-image: url(./img/video_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
   }
   main > section:nth-child(2) > div:first-child > div:last-child {
     display: flex;
@@ -98,8 +102,6 @@
   main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(1) {
     width: 110px;
     height: 110px;
-    background-color: rgb(222, 223, 224);
-    border-radius: 20px;
     cursor: pointer;
   }
   main > section:nth-child(2) > div:first-child > div:last-child > div > div:nth-child(2) {
@@ -108,5 +110,11 @@
   }
   main > section:nth-child(2) > div:first-child > div:last-child > div:nth-child(4) {
     display: flex;
+  }
+  main > section:nth-child(2) > div:first-child > div:last-child > div:nth-child(4) > div:nth-child(1) {
+    background-image: url(./img/video_8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
   }
 }/*# sourceMappingURL=tablet.ver.css.map */

@@ -95,7 +95,11 @@ $color-6:rgb(32, 42, 51);
   cursor: pointer;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 // ------------------------------------------------------------------
 @media(min-width:500px){
 

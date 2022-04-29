@@ -42,7 +42,6 @@
   main > section:nth-child(2) > div div:first-child {
     width: 45%;
     height: 90%;
-    background-color: rgb(222, 223, 224);
   }
   main > section:nth-child(2) > div > div:last-child {
     width: 30%;
@@ -58,6 +57,6 @@
   main > section:nth-child(3) > div {
     width: 8px;
     height: 8px;
-    background-color: rgb(222, 223, 224);
+    background-color: #4F787D;
   }
 }/*# sourceMappingURL=tablet.ver.css.map */

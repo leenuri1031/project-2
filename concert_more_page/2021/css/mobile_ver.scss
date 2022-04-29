@@ -95,11 +95,16 @@ $color-6:rgb(32, 42, 51);
   cursor: pointer;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 // ------------------------------------------------------------------
 #root{
   @include root-style;
-  color: $color-2;
+  color: #4F787D;
+  background-color: #BCDAC5;
   @include flex-setting(center, center);
 }
 
@@ -161,6 +166,24 @@ main{
 
       &>div:last-child{
         @include box-style(30%, 50%, $color-1);
+      }
+    }
+
+    &>div:nth-child(1){
+      &>div:last-child{
+        @include bgimg-style(url(./img/단독콘1.png));
+      }
+    }
+
+    &>div:nth-child(2){
+      &>div:last-child{
+        @include bgimg-style(url(./img/유닛콘1.png));
+      }
+    }
+
+    &>div:nth-child(3){
+      &>div:last-child{
+        @include bgimg-style(url(./img/팬텀콘1.png));
       }
     }
   }

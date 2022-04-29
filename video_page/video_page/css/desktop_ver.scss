@@ -1,10 +1,12 @@
 $width-root:100vw;
-$height-root:100vh;
+$height-root:110vh;
 $color-black:black;
 $color-white:white;
 $solid-black:1px solid black;
 $solid-gray:1px solid #888;
+$dotted-gray:2px dotted #888;
 $solid-red:1px solid #613c3c;
+$solid-col:1px solid #4F787D;
 $per-100:100%;
 $color-1:rgb(222, 223, 224);
 $color-2:rgb(168, 168, 168);
@@ -12,6 +14,7 @@ $color-3:rgb(114, 114, 114);
 $color-4:rgb(73, 73, 73);
 $color-5:rgb(77, 91, 105);
 $color-6:rgb(32, 42, 51);
+
 
 
 // ------------------------------------------------------------------
@@ -78,7 +81,12 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
 
 
 // ------------------------------------------------------------------
@@ -113,7 +121,7 @@ $color-6:rgb(32, 42, 51);
             @include size(30%, 50%);
   
             &>div:nth-child(1){
-              @include box-style(120px, 120px,$color-1 );
+              @include size(120px, 120px);
             }
   
             &>div:nth-child(2){
@@ -134,7 +142,7 @@ $color-6:rgb(32, 42, 51);
             @include size(30%, 50%);
   
             &>div:nth-child(1){
-              @include box-style(120px, 120px,$color-1 );
+              @include size(120px, 120px);
             }
   
             &>div:nth-child(2){
@@ -156,7 +164,7 @@ $color-6:rgb(32, 42, 51);
 
     &>div{
       @include size(10%, 4%);
-      border: $solid-gray;
+      border: $solid-col;
       border-radius: 20px;
       @include flex-setting(center, center);
       cursor: pointer;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,8 @@
   height: 150vh;
   display: flex;
   flex-direction: column;
-  color: rgb(168, 168, 168);
+  color: #4F787D;
+  background-color: #BCDAC5;
 }
 
 header {
@@ -87,6 +89,105 @@ main > section > div:last-child {
   gap: 1vw;
 }
 main > section > div:last-child > div {
-  background-color: rgb(222, 223, 224);
   cursor: pointer;
+}
+main > section:nth-child(1) > div:last-child > div:nth-child(1) {
+  background-image: url(./img/배두훈1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(1) > div:last-child > div:nth-child(2) {
+  background-image: url(./img/배두훈2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(1) > div:last-child > div:nth-child(3) {
+  background-image: url(./img/배두훈3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(1) > div:last-child > div:nth-child(4) {
+  background-image: url(./img/배두훈4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(1) > div:last-child > div:nth-child(5) {
+  background-image: url(./img/배두훈5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(2) > div:last-child > div:nth-child(1) {
+  background-image: url(./img/강형호1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(2) > div:last-child > div:nth-child(2) {
+  background-image: url(./img/강형호2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(2) > div:last-child > div:nth-child(3) {
+  background-image: url(./img/강형호3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(2) > div:last-child > div:nth-child(4) {
+  background-image: url(./img/강형호4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(2) > div:last-child > div:nth-child(5) {
+  background-image: url(./img/강형호5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(3) > div:last-child > div:nth-child(1) {
+  background-image: url(./img/조민규1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(3) > div:last-child > div:nth-child(2) {
+  background-image: url(./img/조민규2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(3) > div:last-child > div:nth-child(3) {
+  background-image: url(./img/조민규3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(3) > div:last-child > div:nth-child(4) {
+  background-image: url(./img/조민규4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(3) > div:last-child > div:nth-child(5) {
+  background-image: url(./img/조민규5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(4) > div:last-child > div:nth-child(1) {
+  background-image: url(./img/고우림1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(4) > div:last-child > div:nth-child(2) {
+  background-image: url(./img/고우림2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(4) > div:last-child > div:nth-child(3) {
+  background-image: url(./img/고우림3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(4) > div:last-child > div:nth-child(4) {
+  background-image: url(./img/고우림4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main > section:nth-child(4) > div:last-child > div:nth-child(5) {
+  background-image: url(./img/고우림5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=mobile.ver.css.map */

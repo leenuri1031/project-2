@@ -77,7 +77,11 @@ $color-6:rgb(32, 42, 51);
   align-items: $ali;
 }
 
-
+@mixin bgimg-style ($url){
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 // ------------------------------------------------------------------
 
@@ -108,7 +112,7 @@ $color-6:rgb(32, 42, 51);
       @include flex-setting(space-evenly, center);
   
       &>div:first-child{
-        @include box-style(10%, 60%,$color-1 );
+        @include size(10%, 60%);
       }
   
       &>div:last-child{
