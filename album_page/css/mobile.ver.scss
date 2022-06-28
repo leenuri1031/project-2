@@ -101,9 +101,11 @@ header{
     @include size(95%, 40%);
     @include flex-setting(flex-end, flex-end);
 
-    &>i{
-      margin: 10px;
-      cursor: pointer;
+    &>a{
+      &>i{
+        margin: 10px;
+        cursor: pointer;
+      }
     }
   }
 
